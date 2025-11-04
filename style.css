@@ -8,7 +8,7 @@
 /* —— body + fonts —— */
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  color: #333;
+  color: #e3a535;
   display: flex;
   justify-content: center;
 }
@@ -24,6 +24,15 @@ body {
   padding-top: 50px;
 }
 
+/* Logo displayed above the site title */
+.site-logo {
+  display: block;
+  margin: 0 auto 12px; /* center and add space below */
+  width: 120px; /* recommended width; adjust as needed */
+  max-width: 40%; /* responsive cap on small screens */
+  height: auto;
+}
+
 .site-title {
   font-size: 22px;
   font-weight: 500;
@@ -37,13 +46,15 @@ body {
 
 .chat-window {
   height: 360px;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
+  background: #000;
+  color: #fff; /* text color inside chat window */
   white-space: pre-line;
+  border-radius: 12px; /* rounded corners for the chat box */
 }
 
 /* messages */
@@ -53,11 +64,12 @@ body {
 }
 
 .msg.user {
-  color: #000;
+  color: #fff;
+  font-weight: 500;
 }
 
 .msg.ai {
-  color: #666666;
+  color: #cccccc;
 }
 
 /* input row */
@@ -72,6 +84,7 @@ body {
   padding: 12px;
   border: 1px solid #ccc;
   font-size: 18px;
+  border-radius: 8px; /* rounded corners for the text input */
 }
 
 .chat-form input:focus {
@@ -81,7 +94,7 @@ body {
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
+  background: #e3a535;
   color: #fff;
   border: none;
   padding: 12px;
@@ -92,6 +105,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: background 0.3s;
+  border-radius: 8px; /* rounded corners for the send button */
 }
 
 .chat-form button .material-icons {
